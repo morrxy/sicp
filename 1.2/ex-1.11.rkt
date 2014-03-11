@@ -25,14 +25,6 @@
 (define (f-ite n)
   (f-it 0 1 2 n))
 
-(define (f-it2 k1 k2 k3 n)
-  (if (= n 0)
-      k3
-      (f-it k2
-            k3
-            (+ k1 (* 2 k2) (* 3 k3))
-            (- n 1))))
-
 (define (f-it k1 k2 k3 n)
   (cond ((= n 0) 0)
         ((= n 1) 1)
